@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .company-name {
+            font-size: 20px;
+            margin: 0;
+        }
+        .navbar .menu-link {
+            color: white;
+            text-decoration: none;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .welcome-title {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="company-name">MAX-BANK</div>
+        <a class="menu-link" href="/account">Account</a>
+    </div>
+    <div class="container">
+        <h1 class="welcome-title">Hi {{ user_name }} - this is your account summary.</h1>
+    </div>
+</body>
+</html>
